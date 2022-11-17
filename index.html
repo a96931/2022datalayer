@@ -13,6 +13,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+      $(document).ready(function(){
         $('nav a').click(function(){
           event.preventDefault();
            var $text = $(this).text();
@@ -20,6 +21,7 @@
               "event": "menu_click",
               "menu_text": $text
             })
+        });
         });
     </script>
   </head>
