@@ -18,8 +18,8 @@
           event.preventDefault();
            var $text = $(this).text();
             dataLayer.push({
-              "event": "menu_click",
-              "menu_text": $text
+              "event": "menu_click", //對應 GTM觸發條件或稱事件
+              "menu_text": $text //對應 GTM變數
             })
         });
         });
@@ -30,22 +30,13 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZH8KWR"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
-      <nav class="main-nav">
-        <ul class="text-center">
-          <li><a href="product">product</a></li>
-          <li><a href="com">commit</a></li>
-          <li><a href="comic">comic</a></li>
-          <li><a href="./#info">info</a></li>
-          <li class="nav-hide">
-            <ol>
-              <li><a href="https://xx/epaper/" rel="external">blog</a></li>
-              <li><a href="https://xx/subscribe/" rel="external">subscribe</a></li>
-              <li><a href="https://xx/" rel="external">home</a></li>
-              <li><a href="mailto:xxg@xxx.com.tw">contact us</a></li>
-            </ol>
-          </li>
-        </ul>
+        <nav class="main-nav">
+          <ul class="text-center">
+            <li><a href="product">我的產品</a></li>
+            <li><a href="com">公司簡介</a></li>
+            <li><a href="comic">我的卡漫</a></li>
+            <li><a href="info">關於我們</a></li>
+          </ul>
       </nav>
   </body>
 </html>
